@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">Station | Local Streaming Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="robots" content="noindex, nofollow"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.api.localstreaming.org/graphql-api/references/objects/station"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Station | Local Streaming Docs"><meta data-rh="true" name="description" content="PBS station metadata."><meta data-rh="true" property="og:description" content="PBS station metadata."><link data-rh="true" rel="canonical" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.84d8ffe1.css">
-<script src="/assets/js/runtime~main.7e546438.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.58167d0d.js" defer="defer"></script>
 <script src="/assets/js/main.7b848607.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -69,11 +69,12 @@
 <p>Last updated date from upstream source.</p>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="stationurlsjson---"><a href="#"><code style="font-weight:normal">Station.<b>urls</b></code></a><span style="font-weight:normal;font-size:.5em;color:var(--ifm-color-secondary-darkest)"> ● </span><a href="/graphql-api/references/scalars/json"><code>[JSON]!</code></a> <span class="badge badge--secondary">non-null</span> <span class="badge badge--secondary">scalar</span> <span class="badge badge--secondary">references</span><a href="#stationurlsjson---" class="hash-link" aria-label="Direct link to stationurlsjson---" title="Direct link to stationurlsjson---">​</a></h4>
 <p>Important URLs associated with the station.</p>
-<p>Each item in this list has three properties:</p>
+<p>Each item in this list has four properties:</p>
 <ul>
 <li><code>url</code>: the URL,</li>
-<li><code>profile</code>: a short name describing the URL purpose, and</li>
-<li><code>qrCodeUrl</code>: the URL of a QR code for the URL.</li>
+<li><code>profile</code>: a short name describing the URL purpose,</li>
+<li><code>qrCodeUrl</code>: the URL of a QR code for the URL, and</li>
+<li><code>displayUrl</code>: the display version of the URL with scheme removed.</li>
 </ul>
 <p>When determing the URL to use for donation CTAs, frontends must check for
 and use one of the following profiles (in order):</p>
